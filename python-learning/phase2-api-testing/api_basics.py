@@ -2,7 +2,7 @@ import requests
 import urllib3
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
-response = requests.get("https://jsonplaceholder.typicode.com/users/1", verify=False)
+response = requests.get("https://jsonplaceholder.typicode.com/users", verify=False)
 
 if response.status_code == 200:
     users = response.json()

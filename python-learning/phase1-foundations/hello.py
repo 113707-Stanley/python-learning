@@ -1,5 +1,5 @@
 name = "Stanley"
-role = "Associte Director, QEA"
+role = "Associate Director, QEA"
 language = "Python"
 days = 1
 print(f"Hello {name}!")
