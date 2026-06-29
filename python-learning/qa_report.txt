@@ -1,0 +1,11 @@
+QA Test Report
+Generated: 2026-06-29 15:28:09
+========================================
+TC-01 | Login with valid credentials | ✅ PASSED
+TC-02 | Login with invalid password | ❌ FAILED
+TC-03 | Logout functionality | ✅ PASSED
+TC-04 | Register new user | ✅ PASSED
+TC-05 | Reset password | ❌ FAILED
+========================================
+Total: 5 | Passed: 3 | Failed: 2
+Pass Rate: 60.0%

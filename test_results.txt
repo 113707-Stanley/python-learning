@@ -1,0 +1,5 @@
+Test Results
+---
+Test 1: Login - PASSED
+Test 2: Logout - PASSED
+Test 3: Register - FAILED

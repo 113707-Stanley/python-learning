@@ -1,0 +1,65 @@
+import os
+import datetime
+
+# Test suite data
+test_suite = [
+    {"id": 1, "name": "Login with valid credentials", "status": "PASSED"},
+    {"id": 2, "name": "Login with invalid password", "status": "FAILED"},
+    {"id": 3, "name": "Logout functionality", "status": "PASSED"},
+    {"id": 4, "name": "Register new user", "status": "PASSED"},
+    {"id": 5, "name": "Reset password", "status": "FAILED"},
+]
+
+def calculate_summary(results):
+    passed = sum(1 for r in results if r['status'] == 'PASSED')
+    failed = sum(1 for r in results if r['status'] == 'FAILED')
+    return passed, failed
+
+def generate_report(results, file_path):
+    try:
+        passed, failed = calculate_summary(results)
+        timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        
+        with open(file_path, "w",encoding="utf-8") as file:
+            file.write(f"QA Test Report\n")
+            file.write(f"Generated: {timestamp}\n")
+            file.write(f"{'='*40}\n")
+            
+            for result in results:
+                status_icon = "✅" if result['status'] == "PASSED" else "❌"
+                file.write(f"TC-{result['id']:02d} | {result['name']} | {status_icon} {result['status']}\n")
+            
+            file.write(f"{'='*40}\n")
+            file.write(f"Total: {len(results)} | Passed: {passed} | Failed: {failed}\n")
+            pass_rate = (passed / len(results)) * 100
+            file.write(f"Pass Rate: {pass_rate:.1f}%\n")
+            
+        print(f"Report generated successfully!")
+        return True
+    
+    except PermissionError:
+        print(f"Cannot write report — permission denied!")
+        return False
+    
+    except Exception as e:
+        print(f"Unexpected error: {e}")
+        return False
+
+def read_report(file_path):
+    try:
+        with open(file_path, "r",encoding="utf-8") as file:
+            print(f"\n{file.read()}")
+    except FileNotFoundError:
+        print("Report not found — generate it first!")
+
+def main():
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    file_path = os.path.join(script_dir, "qa_report.txt")
+    
+    print(f"Running test suite...")
+    success = generate_report(test_suite, file_path)
+    
+    if success:
+        read_report(file_path)
+
+main()

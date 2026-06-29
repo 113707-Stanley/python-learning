@@ -1,0 +1,113 @@
+API TEST REPORT
+Generated: 2026-06-29 17:58:40
+API: https://jsonplaceholder.typicode.com
+============================================================
+
+TEST RESULTS
+------------------------------------------------------------
+✅ API Status Code Check
+   Detail: Expected 200, got 200
+------------------------------------------------------------
+✅ User Count Check
+   Detail: Expected 10 users, got 10
+------------------------------------------------------------
+✅ Required Fields Check — Leanne Graham
+   Detail: Checked fields: ['id', 'name', 'username', 'email', 'phone']
+------------------------------------------------------------
+✅ Email Format Check — Leanne Graham
+   Detail: Email: Sincere@april.biz
+------------------------------------------------------------
+✅ ID Type Check — Leanne Graham
+   Detail: ID value: 1
+------------------------------------------------------------
+✅ Required Fields Check — Ervin Howell
+   Detail: Checked fields: ['id', 'name', 'username', 'email', 'phone']
+------------------------------------------------------------
+✅ Email Format Check — Ervin Howell
+   Detail: Email: Shanna@melissa.tv
+------------------------------------------------------------
+✅ ID Type Check — Ervin Howell
+   Detail: ID value: 2
+------------------------------------------------------------
+✅ Required Fields Check — Clementine Bauch
+   Detail: Checked fields: ['id', 'name', 'username', 'email', 'phone']
+------------------------------------------------------------
+✅ Email Format Check — Clementine Bauch
+   Detail: Email: Nathan@yesenia.net
+------------------------------------------------------------
+✅ ID Type Check — Clementine Bauch
+   Detail: ID value: 3
+------------------------------------------------------------
+✅ Required Fields Check — Patricia Lebsack
+   Detail: Checked fields: ['id', 'name', 'username', 'email', 'phone']
+------------------------------------------------------------
+✅ Email Format Check — Patricia Lebsack
+   Detail: Email: Julianne.OConner@kory.org
+------------------------------------------------------------
+✅ ID Type Check — Patricia Lebsack
+   Detail: ID value: 4
+------------------------------------------------------------
+✅ Required Fields Check — Chelsey Dietrich
+   Detail: Checked fields: ['id', 'name', 'username', 'email', 'phone']
+------------------------------------------------------------
+✅ Email Format Check — Chelsey Dietrich
+   Detail: Email: Lucio_Hettinger@annie.ca
+------------------------------------------------------------
+✅ ID Type Check — Chelsey Dietrich
+   Detail: ID value: 5
+------------------------------------------------------------
+✅ Required Fields Check — Mrs. Dennis Schulist
+   Detail: Checked fields: ['id', 'name', 'username', 'email', 'phone']
+------------------------------------------------------------
+✅ Email Format Check — Mrs. Dennis Schulist
+   Detail: Email: Karley_Dach@jasper.info
+------------------------------------------------------------
+✅ ID Type Check — Mrs. Dennis Schulist
+   Detail: ID value: 6
+------------------------------------------------------------
+✅ Required Fields Check — Kurtis Weissnat
+   Detail: Checked fields: ['id', 'name', 'username', 'email', 'phone']
+------------------------------------------------------------
+✅ Email Format Check — Kurtis Weissnat
+   Detail: Email: Telly.Hoeger@billy.biz
+------------------------------------------------------------
+✅ ID Type Check — Kurtis Weissnat
+   Detail: ID value: 7
+------------------------------------------------------------
+✅ Required Fields Check — Nicholas Runolfsdottir V
+   Detail: Checked fields: ['id', 'name', 'username', 'email', 'phone']
+------------------------------------------------------------
+✅ Email Format Check — Nicholas Runolfsdottir V
+   Detail: Email: Sherwood@rosamond.me
+------------------------------------------------------------
+✅ ID Type Check — Nicholas Runolfsdottir V
+   Detail: ID value: 8
+------------------------------------------------------------
+✅ Required Fields Check — Glenna Reichert
+   Detail: Checked fields: ['id', 'name', 'username', 'email', 'phone']
+------------------------------------------------------------
+✅ Email Format Check — Glenna Reichert
+   Detail: Email: Chaim_McDermott@dana.io
+------------------------------------------------------------
+✅ ID Type Check — Glenna Reichert
+   Detail: ID value: 9
+------------------------------------------------------------
+✅ Required Fields Check — Clementina DuBuque
+   Detail: Checked fields: ['id', 'name', 'username', 'email', 'phone']
+------------------------------------------------------------
+✅ Email Format Check — Clementina DuBuque
+   Detail: Email: Rey.Padberg@karina.biz
+------------------------------------------------------------
+✅ ID Type Check — Clementina DuBuque
+   Detail: ID value: 10
+------------------------------------------------------------
+
+SUMMARY
+============================================================
+Total Tests : 32
+Passed      : 32
+Failed      : 0
+Pass Rate   : 100.0%
+============================================================
+
+OVERALL RESULT: ✅ ALL TESTS PASSED

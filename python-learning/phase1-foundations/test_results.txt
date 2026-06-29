@@ -1,0 +1,8 @@
+Test Results
+---
+Test 1: Login - PASSED
+Test 2: Logout - PASSED
+Test 3: Register - FAILED
+Test 4: Profile Update - PASSED
+---
+Total: 4 | Passed: 3 | Failed: 1
